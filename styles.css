@@ -1,217 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Outfit:wght@200;400&family=Raleway:wght@200;400&display=swap');
-*{
-    font-family: 'Raleway';
+
+* {
+  font-family: 'Raleway';
 }
 
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin: 134px auto;
-    max-width: 900px;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 134px auto;
+  max-width: 900px;
 }
 
-body{
-    background-color: #674bb1;
-    z-index: 0;
-} 
-
-#bg {
-   
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        background-repeat: no-repeat;
-}
-.image{
-    position: relative;
-    z-index: 1;
-}
-
-.image{
-    margin: 10px;
-    margin-right: 50px;
-    position: relative;
-}
-
-
-
-.text{
-    color: white;
-    word-wrap: break-word;
-    
-    
-}
-
-h1{
-    font-weight: 600;
-    width: 407px;
-}
-
-p{
-    font-weight: 400;
-}
-
-.text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-.text p {
-    font-size: 1.25rem;
-    line-height: 1.5;
-}
-
-.text button {
-    font-size: 1.25rem;
-    padding: 15px 33px;
-    background-color: #fff;
-    color: #674bb1;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    box-shadow: 4px 4px black;
-}
-
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 27px;
+body {
+  background-color: #674bb1;
+  z-index: 0;
+  background-image: url('/images/bg-desktop.svg');
+  background-size: cover;
 }
 
 @media only screen and (max-width: 598px) {
-    .container {
-      flex-direction: column;
-      margin: 50px auto;
-    }
-    
-    #bg {
-      background-image: url('/images/bg-mobile.svg');
-    }
-    
-    .image {
-      margin-top: -9px;
-      text-align: center;
-    }
-    
-    #box{
-        max-width: 762px;
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        position: relative;
-    }
-    
-    .text {
-      text-align: center;
-      margin-top: 50px;
-    }
-    
-    h1 {
-      font-size: 2rem;
-      width: auto;
-      margin-bottom: 10px;
-    }
-    
-    p {
-      font-size: 1rem;
-    }
-    
-    .text button {
-      font-size: 1rem;
-      padding: 10px 20px;
-    }
-    
-    footer {
-      justify-content: center;
-      padding: 20px;
-    }
+  body {
+    background-image: url('/images/bg-mobile.svg');
+    background-size: contain;
   }
-  
-  /* Tablet styles */
-@media only screen and (min-width: 599px) and (max-width: 1024px) {
-    .container {
-      flex-direction: column;
-      margin: 160px auto;
-      max-width: 600px;
-    }
-    
-    #bg {
-      background-size: cover;
-      background-position: center;
-      background-image: url('/images/bg-desktop.svg');
-    }
-    
-    .image {
-      margin-top: -150px;
-      text-align: center;
-    }
-    
-    #box{
-        max-width: 762px;
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        position: relative;
-    }
-    
-    .text {
-      text-align: center;
-      margin-top: 50px;
-    }
-    
-    h1 {
-      font-size: 3rem;
-      width: auto;
-      margin-bottom: 10px;
-    }
-    
-    p {
-      font-size: 1.25rem;
-    }
-    
-    .text button {
-      font-size: 1.25rem;
-      padding: 15px 33px;
-    }
-    
-    footer {
-      justify-content: center;
-      padding: 20px;
-    }
 }
-@media only screen and (min-width: 1025px) {
-    .container {
-      margin: 134px auto;
-      max-width: 900px;
-    }
-    
-    #bg {
-      background-size: cover;
-      background-position: center;
 
-    }
+img {
+  max-width: 100%;
+}
 
-    #bg {
-        background-size: cover;
-        background-position: center;
+header,
+main,
+footer {
+  width: 80vw;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 50px 0;
+}
 
-        background-repeat: no-repeat;
-      }
-    
-    h1 {
-      font-size: 4rem;
-      margin-bottom: 20px;
-    }
-    
-    p {
-      font-size: 1.5rem;
-    }
+@media only screen and (max-width: 598px) {
+  header,
+  main,
+  footer {
+    width: 80%;
   }
+}
+
+.image {
+  position: relative;
+  z-index: 1;
+  width: 50%;
+  margin-right: 50px;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 598px) {
+  .image {
+    width: 100%;
+    margin-top: -9px;
+    text-align: center;
+  }
+}
+
+.text {
+  color: white;
+  word-wrap: break-word;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+@media only screen and (max-width: 598px) {
+  .text {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+
+.text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.text p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.text button {
+  font-size: 1.25rem;
+  padding: 15px 33px;
+  background-color: #fff;
+  color: #674bb1;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 4px 4px black;
+}
+
+@media only screen and (max-width: 598px) {
+  .text button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+@media only screen and (min-width: 599px) and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    margin: 160px auto;
+    max-width: 600px;
+  }
+
+  .image {
+    margin-top: -150px;
+  }
+
+  .text {
+    margin-top: 50px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  .text button {
+    font-size: 1.25rem;
+    padding: 15px 33px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .container {
+    margin: 134px auto;
+    max-width: 900px;
+  }
+}
