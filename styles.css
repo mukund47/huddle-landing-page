@@ -30,7 +30,7 @@ body{
 .image{
     position: relative;
     z-index: 1;
-    background-color: #f2f2f2;    
+       
     background-size: cover;
 }
 
