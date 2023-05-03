@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Outfit:wght@200;400&family=Raleway:wght@200;400&display=swap');
 *{
     font-family: 'Raleway';
@@ -26,11 +27,11 @@ body{
         height: 100%;
         z-index: -1;
         background-repeat: no-repeat;
+        background-size: cover;
 }
 .image{
     position: relative;
-    z-index: 1;
-       
+    z-index: 1; 
     background-size: cover;
 }
 
@@ -90,6 +91,7 @@ footer{
     flex-direction: row;
     justify-content: flex-end;
     margin-right: 27px;
+    margin-bottom: 1px;
 }
 header, main, footer {
         width: 80vw;
